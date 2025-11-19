@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni | KincLong Wash</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        /* Testimonial grid */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 2fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            animation: fadeUp 0.8s ease both;
+        }
+        .testimonial-card {
+            background: linear-gradient(#fff, #fff) padding-box,
+                        linear-gradient(90deg, #4da8da, #00e0ff, #4da8da) border-box;
+            border: 3px solid transparent;
+            border-radius: 20px;
+            padding: 1.8rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.1s ease;
+            animation: cardFloat 6s ease-in-out infinite;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(0, 191, 255, 0.3);
+        }
+        .testimonial-text {
+            font-style: italic;
+            color: #444;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .testimonial-author {   
+            display: flex;
+            align-items: center;
+        }
+        .author-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            background: linear-gradient(135deg, #4da8da, #2c5aa0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .author-info h4 {
+            margin: 0;
+            color: #2c5aa0;
+        }
+        .author-info p {
+            margin: 0;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* Rating section */
+        .rating-overview {
+            background: linear-gradient(#fff, #fff) padding-box,
+                        linear-gradient(90deg, #4da8da, #00e0ff, #4da8da) border-box;
+            border: 4px solid transparent;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 4rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            animation: borderGlow 5s linear infinite;
+            text-align: center;
+        }
+        .rating-overview h2 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+        .stars {
+            font-size: 2rem;
+            color: #FFD700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+        }
+        .rating-text {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes cardFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+        @keyframes borderGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c5aa0;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-info {
+            margin: 1rem 0;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        .social-links {
+            margin: 1rem 0;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #cce0ff;
+        }
+        .sub{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">K</div> KincLong Wash
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Halaman Utama</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="harga.html">Harga</a></li>
+                    <li><a href="testimoni.html" class="active">Testimoni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section id="testimonials">
+        <h1>Testimoni Pelanggan</h1>
+        <p class="sub">Lihat pendapat pelanggan kami tentang pengalaman mereka di KincLong Wash.</p>
+
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <div class="testimonial-text">"Motor vario saya selalu kinclong setelah dicuci di sini. Pelayanannya cepat dan hasilnya memuaskan. Harganya juga terjangkau!"</div>
+                <div class="testimonial-author">
+                    <div class="author-img">A</div>
+                    <div class="author-info">
+                        <h4>Akbar Tsaqib</h4>
+                        <p>Pelanggan Setia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-text">"Saya suka dengan perhatian detail yang diberikan staff KincLong Wash. Bagian sulit dijangkau pun dibersihkan dengan teliti."</div>
+                <div class="testimonial-author">
+                    <div class="author-img">L</div>
+                    <div class="author-info">
+                        <h4>Lukmanul Hakim</h4>
+                        <p>Pelanggan Bulanan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-text">"Tempat cuci motor terbaik di daerah sini. Hasilnya selalu memuaskan dan staffnya ramah-ramah. Recommended banget!"</div>
+                <div class="testimonial-author">
+                    <div class="author-img"><Nav>N</Nav></div>
+                    <div class="author-info">
+                        <h4>Nazrul Zafran Ramadhan</h4>
+                        <p>Pelanggan Baru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rating-overview">
+            <h2>Rating Keseluruhan</h2>
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">4.8/5 dari 200+ ulasan</div>
+            <p>Berdasarkan ulasan pelanggan di berbagai platform</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>KincLong Wash</h3>
+            <div class="contact-info">
+                <p>📞 0823-1843-0070</p>
+                <p>📍 Jl. Motor Bersih No. 123, Jakarta</p>
+              <p>🕒 Buka setiap hari 08.00 - 24.00 WIB</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100077672971122" target="blank">FaceBook</a>
+                <a href="https://www.instagram.com/naff.desu" target="blank">Instagram</a>
+                <a href="https://wa.me/6282318430070" target="blank">Whatsapp</a>
+            </div>
+            <p class="copyright">&copy; 2025 KincLong Wash. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
