@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinclong Wash</title>
+        <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #4da8da, #2c5aa0);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        .btn, .layanan90 {
+            display: inline-block;
+            background-color: white;
+            color: #2c5aa0;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration:none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover, .layanan90:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .intro {
+            background: white;
+            border-radius: 7px;
+            padding: 1.3rem;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            
+        }
+        .service-grid {
+            position: relative;
+            border: 3px solid transparent;
+            border-radius: 20px;
+            background: linear-gradient(#fff, #fff) padding-box,
+                        linear-gradient(90deg, #007bff, #00e0ff, #007bff) border-box;
+            background-size: 300% 300%;
+            animation: borderMove 5s linear infinite;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 1.5rem;
+        }
+        @keyframes borderMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .service-grid:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+        }
+        .service-item {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+        }
+        .service-item .icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #2c5aa0;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-info {
+            margin: 1rem 0;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        .social-links {
+            margin: 1rem 0;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #cce0ff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">K</div> KincLong Wash
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="harga.html">Harga</a></li>
+                    <li><a href="testimoni.html">Testimoni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container20">
+    <section id="home" class="page-active">
+        <div class="hero">
+            <h1>Kinclong Wash</h1>
+            <p>Layanan cuci motor profesional dengan hasil kinclong dan harga terjangkau. Motor Anda bersih, hati pun senang!</p>
+            <a href="layanan.html" class="layanan90"><b>Layanan</b></a>
+        </div>
+
+        <div class="intro">
+            <h2>Mengapa Memilih KincLong Wash?</h2>
+            <p>KincLong Wash adalah tempat cuci motor terpercaya. dengan pengalaman lebih dari 5 tahun. Kami menggunakan produk pembersih berkualitas tinggi dan peralatan modern untuk memberikan hasil terbaik untuk kendaraan Anda.</p>
+
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="icon">⚡</div>
+                    <h3>Layanan Cepat</h3>
+                    <p>Proses cuci motor yang efisien, hanya membutuhkan waktu 15–30 menit tergantung paket yang dipilih.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">😊</div>
+                    <h3>Staff Berpengalaman</h3>
+                    <p>Tim kami terlatih dan berpengalaman dalam menangani berbagai jenis motor dengan hati-hati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>KincLong Wash</h3>
+            <div class="contact-info">
+                <p>📞 0823-1843-0070</p>
+                <p>📍 Jl. Motor Bersih No. 123, Jakarta</p>
+                <p>🕒 Buka setiap hari 08.00 - 2.00 WIB</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100077672971122" target="blank">FaceBook</a>
+                <a href="https://www.instagram.com/naff.desu" target="blank">Instagram</a>
+                <a href="https://wa.me/6282318430070" target="blank">Whatsapp</a>
+            </div>
+            <p class="copyright">&copy; 2025 KincLong Wash. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

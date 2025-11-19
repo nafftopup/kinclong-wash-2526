@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harga | KincLong Wash</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #4da8da, #2c5aa0);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4da8da;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        main {
+            padding: 2rem 0;
+            min-height: calc(100vh - 160px);
+        }
+        h1 {
+            text-align: center;
+            color: #2c5aa0;
+            font-size: 2.3rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Tabel Harga */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            animation: fadeUp 0.8s ease both;
+
+        }
+        .price-table th {
+            background: linear-gradient(100deg, #4da8da, #2c5aa0);
+            color: white;
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
+        .price-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 500;
+        }
+        .price-table tr:hover {
+            background-color: #f0f9ff;
+            transition: background-color 0.3s;
+        }
+
+        /* Promo Section */
+        .promo-section {
+            background: linear-gradient(#fff, #fff) padding-box,
+                        linear-gradient(90deg, #4da8da, #00e0ff, #4da8da) border-box;
+            border: 3px solid transparent;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            animation: borderGlow 4s linear infinite;
+        }
+        @keyframes borderGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .promo-section h2 {
+            text-align: center;
+            color: #2c5aa0;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .service-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 191, 255, 0.4);
+        }
+        .service-card h3 {
+            color: #2c5aa0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 0.5rem; 
+        }
+        .service-card p {
+            color: #333;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        /* Animasi fade */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c5aa0;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-info {
+            margin: 1rem 0;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        .social-links {
+            margin: 1rem 0;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #cce0ff;
+        }
+      
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">K</div> KincLong Wash
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Halaman Utama</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="harga.html" class="active">Harga</a></li>
+                    <li><a href="testimoni.html">Testimoni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section id="pricing" class="page-active">
+        <h1>Daftar Harga</h1>
+        <div class="p"><p>Berikut adalah daftar harga layanan cuci motor di KincLong Wash. Harga dapat berubah tanpa pemberitahuan sebelumnya.</p></div>
+        
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Paket Layanan</th>
+                    <th>Deskripsi</th>
+                    <th>Harga</th>
+                    <th>Estimasi Waktu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cuci Biasa</td>
+                    <td>Cuci exterior, bilas, dan keringkan</td>
+                    <td>Rp 15.000</td>
+                    <td>15 menit</td>
+                </tr>
+                <tr>
+                    <td>Cuci Lengkap</td>
+                    <td>Cuci menyeluruh termasuk bagian dalam</td>
+                    <td>Rp 25.000</td>
+                    <td>25 menit</td>
+                </tr>
+                <tr>
+                    <td>Cuci Premium</td>
+                    <td>Cuci lengkap + wax dan treatment khusus</td>
+                    <td>Rp 40.000</td>
+                    <td>40 menit</td>
+                </tr>
+                <tr>
+                    <td>Poles Body</td>
+                    <td>Poles untuk menghilangkan goresan halus</td>
+                    <td>Rp 75.000</td>
+                    <td>60 menit</td>
+                </tr>
+                <tr>
+                    <td>Treatment Mesin</td>
+                    <td>Pembersihan mesin dan komponen sekitar</td>
+                    <td>Rp 30.000</td>
+                    <td>30 menit</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="promo-section">
+            <h2>Promo Spesial</h2>
+            <div class="service-card">
+                <h3>💸 Paket Hemat Mingguan</h3>
+                <p>Dapatkan cuci motor 3x dalam seminggu dengan harga spesial hanya Rp 60.000 (normal Rp 75.000).</p>
+            </div>
+            <div class="service-card">
+                <h3>👥 Diskon Grup</h3>
+                <p>Bawa 3 motor atau lebih dan dapatkan diskon 20% untuk semua layanan <br></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>KincLong Wash</h3>
+            <div class="contact-info">
+                <p>📞 0823-1843-0070</p>
+                <p>📍 Jl. Motor Bersih No. 123, Jakarta</p>
+               <p>🕒 Buka setiap hari 08.00 - 24.00 WIB</p>
+            </div>
+            <div class="social-links">
+                 <a href="https://www.facebook.com/profile.php?id=100077672971122" target="blank">FaceBook</a>
+                <a href="https://www.instagram.com/naff.desu" target="blank">Instagram</a>
+                <a href="https://wa.me/6282318430070" target="blank">Whatsapp</a>
+            </div>
+            <p class="copyright">&copy; 2025 KincLong Wash. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
